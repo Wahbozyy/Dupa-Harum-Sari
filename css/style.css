@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-gold: #C59B27;
+  --primary-gold-dark: #A07817;
+  --accent-brown: #2D1E18;
+  --accent-brown-light: #412B22;
+  --bg-cream: #FAF7F2;
+  --bg-warm-white: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-cream);
+  color: var(--accent-brown);
+  overflow-x: hidden;
+}
+
+.font-serif-title {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+/* ============================================================
+   BUTTON STYLES (NATURAL & PROFESSIONAL - BUKAN TEMPLATE AI)
+   ============================================================ */
+
+/* Primary Button: Solid Brown-Gold dengan transisi lembut */
+.btn-primary {
+  background-color: var(--primary-gold);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(197, 155, 39, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-gold-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(197, 155, 39, 0.35);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Secondary Button: Clean Outline Natural */
+.btn-secondary {
+  background-color: #ffffff;
+  color: var(--accent-brown);
+  border: 1.5px solid #E5DFD5;
+  font-weight: 600;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent-brown);
+  background-color: #F5EFEB;
+  color: var(--accent-brown);
+  transform: translateY(-1px);
+}
+
+/* Marketplace Button Badge */
+.btn-marketplace {
+  background-color: #ffffff;
+  border: 1px solid #E8E2D8;
+  color: #4A3E38;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-marketplace:hover {
+  border-color: var(--primary-gold);
+  background-color: #FFFDF9;
+}
+
+/* ============================================================
+   CARD & IMAGE RATIO 4:5
+   ============================================================ */
+.aspect-4-5 {
+  aspect-ratio: 4 / 5;
+}
+
+.product-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+@media (hover: hover) {
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px -10px rgba(45, 30, 24, 0.12);
+  }
+}
+
+/* Hero Background Glow Ornaments */
+.hero-glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(197, 155, 39, 0.15) 0%, rgba(250, 247, 242, 0) 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+/* Floating WA Animation Natural */
+@keyframes soft-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.floating-wa {
+  animation: soft-bounce 3s infinite ease-in-out;
+}
+
+/* Custom Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C59B27;
+  border-radius: 3px;
+}

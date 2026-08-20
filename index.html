@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>HARUM SARI DUPA - Sarana Bhakti, Aroma Sejati | Sading, Mengwi</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'gold': { 400: '#E6CA65', 500: '#C59B27', 600: '#A07817' },
+            'brand': { 'brown': '#2D1E18', 'brown-light': '#412B22', 'cream': '#FAF7F2' }
+          },
+          screens: { 'xs': '420px' }
+        }
+      }
+    }
+  </script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-brand-cream text-brand-brown antialiased selection:bg-gold-500 selection:text-white">
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-brand-cream/95 backdrop-blur-md border-b border-[#EBE4D8] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        
+        <!-- Logo Brand -->
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-gold-500 flex items-center justify-center p-1 bg-white shadow-sm shrink-0">
+            <img src="img/Logo.jpeg" alt="Logo Harum Sari Dupa" class="w-full h-full object-contain rounded-full">
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif-title font-bold text-sm xs:text-base sm:text-lg tracking-wider text-brand-brown leading-tight">
+              HARUM <span class="text-gold-500">SARI</span> DUPA
+            </span>
+            <span class="text-[9px] xs:text-[10px] sm:text-xs text-gold-600 tracking-widest uppercase font-semibold">
+              Sarana Bhakti, Aroma Sejati
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <a href="index.html" class="font-semibold text-gold-500 border-b-2 border-gold-500 pb-1 text-sm">Beranda</a>
+          <a href="tentang.html" class="font-medium text-gray-700 hover:text-gold-500 transition-colors text-sm">Tentang Kami</a>
+          <a href="produk.html" class="font-medium text-gray-700 hover:text-gold-500 transition-colors text-sm">Katalog Dupa</a>
+          <a href="kontak.html" class="font-medium text-gray-700 hover:text-gold-500 transition-colors text-sm">Kontak & Lokasi</a>
+        </div>
+
+        <!-- Quick WA Callout Desktop -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="https://wa.me/6287726732826?text=Halo%20Harum%20Sari%20Dupa,%20saya%20tertarik%20dengan%20produk%20dupa%20Anda" target="_blank" class="btn-primary text-xs px-4 py-2">
+            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" type="button" aria-label="Buka Menu" class="p-2 rounded-lg text-brand-brown hover:bg-gold-500/10 focus:outline-none transition-colors">
+            <i id="menu-icon" data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-[#EBE4D8] px-5 pt-3 pb-6 space-y-3 shadow-xl">
+      <a href="index.html" class="block py-2 text-sm font-bold text-gold-500 border-l-4 border-gold-500 pl-3 bg-brand-cream/60 rounded-r-lg">Beranda</a>
+      <a href="tentang.html" class="block py-2 text-sm font-medium text-gray-700 hover:text-gold-500 pl-3">Tentang Kami</a>
+      <a href="produk.html" class="block py-2 text-sm font-medium text-gray-700 hover:text-gold-500 pl-3">Katalog Dupa (13 Varian)</a>
+      <a href="kontak.html" class="block py-2 text-sm font-medium text-gray-700 hover:text-gold-500 pl-3">Kontak & Lokasi Maps</a>
+      
+      <div class="pt-3 border-t border-gray-100 flex flex-col gap-2">
+        <a href="https://wa.me/6287726732826" target="_blank" class="w-full py-2.5 btn-primary text-xs justify-center">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> Chat WA: 0877-2673-2826
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative py-12 sm:py-20 lg:py-24 overflow-hidden">
+    <div class="hero-glow -top-10 -left-10"></div>
+    <div class="hero-glow bottom-0 right-0"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-5 text-center lg:text-left" data-aos="fade-up">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#E5DFD5] text-gold-600 text-xs font-semibold shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+            Reseller Resmi & Distributor Dupa Berkualitas
+          </div>
+
+          <h1 class="font-serif-title text-3xl xs:text-4xl sm:text-5xl lg:text-[3.4rem] font-bold text-brand-brown leading-[1.18] tracking-tight">
+            Harum Semerbak, <br>
+            <span class="text-gold-500 relative inline-block">
+              Aroma Suci
+              <svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 250 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 9C60 2.5 180 2.5 247 9" stroke="#C59B27" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </span> 
+            untuk Ibadah & Relaksasi
+          </h1>
+
+          <p class="text-gray-700 text-sm xs:text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed pt-1">
+            Menyediakan aneka dupa abu dingin, dupa racik tradisional, dupa herbal hingga dupa impor India (Krisna Glory, Sekar Sari Madu, Cendana Tualen, Sinar Dewa) dengan abu tidak panas dan wangi tahan lama.
+          </p>
+
+          <div class="flex flex-col xs:flex-row items-center justify-center lg:justify-start gap-3 pt-3">
+            <a href="produk.html" class="w-full xs:w-auto btn-primary px-7 py-3.5 text-sm">
+              Lihat 13 Pilihan Dupa <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/6287726732826?text=Halo%20Admin%20Harum%20Sari%20Dupa,%20saya%20ingin%20tanya%20paket%20reseller/grosir" target="_blank" class="w-full xs:w-auto btn-secondary px-6 py-3.5 text-sm">
+              <i data-lucide="message-square" class="w-4 h-4 text-gold-500"></i> Tanya Grosir / Reseller
+            </a>
+          </div>
+
+          <div class="pt-6 border-t border-[#EAE3D6] space-y-2.5">
+            <p class="text-[11px] sm:text-xs text-gray-500 font-semibold uppercase tracking-wider">
+              Lokasi Toko & Tersedia di Marketplace:
+            </p>
+            <div class="flex flex-wrap justify-center lg:justify-start items-center gap-2">
+              <span class="inline-flex items-center gap-1.5 bg-[#F2ECE4] text-brand-brown px-3 py-1.5 rounded-md text-xs font-medium">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold-500"></i> Jalan Pendawa No. 22 Sading, Mengwi
+              </span>
+              <a href="https://shopee.co.id" target="_blank" class="btn-marketplace">
+                <span class="w-2 h-2 rounded-full bg-orange-500"></span> Shopee
+              </a>
+              <a href="https://tokopedia.com" target="_blank" class="btn-marketplace">
+                <span class="w-2 h-2 rounded-full bg-green-600"></span> Tokopedia
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Image (Rasio 4:5 dengan path img/hero-dupa.png) -->
+        <div class="lg:col-span-5 relative mt-4 lg:mt-0" data-aos="fade-left">
+          <div class="absolute -inset-2 rounded-[2rem] bg-gradient-to-tr from-gold-500/30 to-brand-brown/10 filter blur-sm"></div>
+
+          <div class="relative mx-auto max-w-sm sm:max-w-md aspect-4-5 rounded-3xl overflow-hidden border-[6px] border-white shadow-2xl bg-white">
+            <img src="img/hero-dupa.png" alt="Display Paket Dupa Harum Sari" class="w-full h-full object-cover" onerror="this.src='img/10.png'">
+
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-brown/90 via-black/20 to-transparent flex flex-col justify-end p-5 sm:p-6 text-white">
+              <span class="bg-gold-500 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded w-max mb-1.5">Koleksi Terlengkap</span>
+              <h3 class="font-serif-title text-lg sm:text-xl font-bold">Dupa Harum Sari Bali</h3>
+              <p class="text-xs text-gray-200 mt-0.5">Sedia Rahayu Cendana, Krisna Glory, Sekar Sari Madu, Abu Dingin & Dupa India.</p>
+            </div>
+          </div>
+
+          <div class="hidden xs:flex absolute -bottom-4 -left-4 bg-white/95 backdrop-blur-sm p-3.5 rounded-2xl shadow-xl border border-[#EBE4D8] items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center shrink-0">
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-xs font-bold text-brand-brown block">100% Abu Dingin</span>
+              <span class="text-[11px] text-gray-500">Aman tidak perih di kulit</span>
+            </div>
+          </div>
+
+          <div class="hidden sm:flex absolute -top-4 -right-4 bg-white/95 backdrop-blur-sm px-3.5 py-2.5 rounded-2xl shadow-xl border border-[#EBE4D8] items-center gap-2">
+            <div class="flex text-amber-500">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <div class="text-left">
+              <span class="text-xs font-bold text-brand-brown block">4.9 / 5.0</span>
+              <span class="text-[10px] text-gray-500">Pilihan Umat & Reseller</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 KEUNGGULAN UTAMA -->
+  <section class="py-12 bg-white border-y border-[#EBE4D8]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-2xl bg-brand-cream border border-[#E5DFD5] flex items-start gap-4">
+          <div class="w-11 h-11 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center shrink-0">
+            <i data-lucide="flame" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-brand-brown text-sm sm:text-base">Abu Dingin & Nyala Awet</h4>
+            <p class="text-xs text-gray-600 mt-1 leading-relaxed">Abu dupa tidak panas di tangan saat jatuh, aman untuk sembahyang sehari-hari serta durasi pembakaran stabil.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-brand-cream border border-[#E5DFD5] flex items-start gap-4">
+          <div class="w-11 h-11 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center shrink-0">
+            <i data-lucide="flower-2" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-brand-brown text-sm sm:text-base">Bahan Alami & Wangi Suci</h4>
+            <p class="text-xs text-gray-600 mt-1 leading-relaxed">Racikan bahan alami Cendana, Gaharu, Madu, Cempaka, hingga ekstrak herbal pilihan khas dupa Bali dan India.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-brand-cream border border-[#E5DFD5] flex items-start gap-4 sm:col-span-2 lg:col-span-1">
+          <div class="w-11 h-11 rounded-xl bg-gold-500/10 text-gold-500 flex items-center justify-center shrink-0">
+            <i data-lucide="package-check" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-brand-brown text-sm sm:text-base">Grosir & Reseller Toko</h4>
+            <p class="text-xs text-gray-600 mt-1 leading-relaxed">Menerima pesanan satuan, paket canang upacara pura, hingga kartonan dengan harga reseller terjangkau.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PREVIEW 4 PRODUK TERFAVORIT (img/10.png, img/12.png, img/2.png, img/3.png) -->
+  <section class="py-14 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-12" data-aos="fade-up">
+        <div>
+          <span class="text-xs font-bold text-gold-600 uppercase tracking-widest block mb-1">Katalog Unggulan</span>
+          <h2 class="font-serif-title text-2xl sm:text-3xl font-bold text-brand-brown">Varian Terfavorit</h2>
+        </div>
+        <a href="produk.html" class="mt-3 sm:mt-0 text-xs sm:text-sm font-bold text-gold-600 hover:text-gold-500 flex items-center gap-1">
+          Lihat Semua 13 Varian <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        
+        <!-- Card 1 (img/10.png) -->
+        <div class="product-card bg-white rounded-2xl p-3 border border-[#E5DFD5] shadow-sm flex flex-col justify-between" data-aos="fade-up">
+          <div>
+            <div class="relative aspect-4-5 rounded-xl overflow-hidden bg-brand-cream mb-3">
+              <img src="img/10.png" alt="Dupa Harum Rahayu Krisna Glory" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-brand-brown text-gold-400 text-[9px] font-bold px-2 py-0.5 rounded">1.5 Jam • Abu Dingin</span>
+            </div>
+            <span class="text-[10px] text-gray-500 font-semibold uppercase block">Seri Rahayu • Harum Full</span>
+            <h3 class="font-serif-title font-bold text-brand-brown text-sm sm:text-base mt-0.5">Rahayu Krisna Glory</h3>
+            <p class="text-[11px] sm:text-xs text-gray-600 mt-1 line-clamp-2">Keharuman bunga mawar keemasan semerbak dan lembut dengan abu dingin yang aman.</p>
+          </div>
+          <div class="pt-3 mt-3 border-t border-gray-100 flex items-center justify-between">
+            <span class="text-gold-600 font-bold text-xs sm:text-sm">Rp 25.000</span>
+            <a href="https://wa.me/6287726732826?text=Halo%20saya%20ingin%20pesan%20Dupa%20Rahayu%20Krisna%20Glory" target="_blank" class="p-2 rounded-lg bg-gold-500 hover:bg-gold-600 text-white transition-colors" aria-label="Beli via WA">
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 (img/12.png) -->
+        <div class="product-card bg-white rounded-2xl p-3 border border-[#E5DFD5] shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="relative aspect-4-5 rounded-xl overflow-hidden bg-brand-cream mb-3">
+              <img src="img/12.png" alt="Dupa Sekar Sari Madu" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-amber-600 text-white text-[9px] font-bold px-2 py-0.5 rounded">Abu Dingin • Madu</span>
+            </div>
+            <span class="text-[10px] text-gray-500 font-semibold uppercase block">Sekar Sari</span>
+            <h3 class="font-serif-title font-bold text-brand-brown text-sm sm:text-base mt-0.5">Sekar Sari Madu</h3>
+            <p class="text-[11px] sm:text-xs text-gray-600 mt-1 line-clamp-2">Aroma manis alami madu murni pembawa energi positif dan keharmonisan ruang.</p>
+          </div>
+          <div class="pt-3 mt-3 border-t border-gray-100 flex items-center justify-between">
+            <span class="text-gold-600 font-bold text-xs sm:text-sm">Rp 25.000</span>
+            <a href="https://wa.me/6287726732826?text=Halo%20saya%20ingin%20pesan%20Dupa%20Sekar%20Sari%20Madu" target="_blank" class="p-2 rounded-lg bg-gold-500 hover:bg-gold-600 text-white transition-colors" aria-label="Beli via WA">
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 (img/2.png) -->
+        <div class="product-card bg-white rounded-2xl p-3 border border-[#E5DFD5] shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="relative aspect-4-5 rounded-xl overflow-hidden bg-brand-cream mb-3">
+              <img src="img/2.png" alt="Dupa Racik Cendana Tualen" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-brand-brown text-gold-400 text-[9px] font-bold px-2 py-0.5 rounded">2 Jam • 99% Natural</span>
+            </div>
+            <span class="text-[10px] text-gold-600 font-bold uppercase block">Marga Shanti • Herbal Racik</span>
+            <h3 class="font-serif-title font-bold text-brand-brown text-sm sm:text-base mt-0.5">Racik Cendana Tualen</h3>
+            <p class="text-[11px] sm:text-xs text-gray-600 mt-1 line-clamp-2">Racikan Gaharu, Cendana, Majegau, Mimbau & Rempah untuk semadhi.</p>
+          </div>
+          <div class="pt-3 mt-3 border-t border-gray-100 flex items-center justify-between">
+            <span class="text-gold-600 font-bold text-xs sm:text-sm">Rp 30.000</span>
+            <a href="https://wa.me/6287726732826?text=Halo%20saya%20ingin%20pesan%20Dupa%20Racik%20Cendana%20Tualen" target="_blank" class="p-2 rounded-lg bg-gold-500 hover:bg-gold-600 text-white transition-colors" aria-label="Beli via WA">
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4 (img/3.png) -->
+        <div class="product-card bg-white rounded-2xl p-3 border border-[#E5DFD5] shadow-sm flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+          <div>
+            <div class="relative aspect-4-5 rounded-xl overflow-hidden bg-brand-cream mb-3">
+              <img src="img/3.png" alt="Dupa Sekar Sari Cempaka 1 Kg" class="w-full h-full object-cover">
+              <span class="absolute top-2 left-2 bg-gold-500 text-white text-[9px] font-bold px-2 py-0.5 rounded">1 Kg Kemasan • Hemat</span>
+            </div>
+            <span class="text-[10px] text-gray-500 font-semibold uppercase block">Sekar Sari • Abu Dingin</span>
+            <h3 class="font-serif-title font-bold text-brand-brown text-sm sm:text-base mt-0.5">Sekar Sari Cempaka 1Kg</h3>
+            <p class="text-[11px] sm:text-xs text-gray-600 mt-1 line-clamp-2">Kemasan hemat 1 kg aroma bunga cempaka kuning Bali yang semerbak.</p>
+          </div>
+          <div class="pt-3 mt-3 border-t border-gray-100 flex items-center justify-between">
+            <span class="text-gold-600 font-bold text-xs sm:text-sm">Rp 50.000</span>
+            <a href="https://wa.me/6287726732826?text=Halo%20saya%20ingin%20pesan%20Dupa%20Sekar%20Sari%20Cempaka%201Kg" target="_blank" class="p-2 rounded-lg bg-gold-500 hover:bg-gold-600 text-white transition-colors" aria-label="Beli via WA">
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER RESELLER -->
+  <section class="py-14 bg-brand-brown text-white relative">
+    <div class="max-w-4xl mx-auto px-4 text-center" data-aos="zoom-in">
+      <h2 class="font-serif-title text-2xl sm:text-3xl font-bold text-gold-400">Ingin Bermitra Sebagai Reseller Dupa?</h2>
+      <p class="text-gray-300 max-w-xl mx-auto mt-2 text-xs sm:text-sm leading-relaxed">
+        Dapatkan penawaran harga grosir kartonan untuk toko perlengkapan upacara, toko sembako, dan reseller online di seluruh Bali.
+      </p>
+      <div class="mt-6 flex justify-center">
+        <a href="https://wa.me/6287726732826?text=Halo%20Harum%20Sari%20Dupa,%20saya%20mau%20gabung%20reseller" target="_blank" class="btn-primary px-7 py-3.5 text-xs sm:text-sm">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> Hubungi WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-[#EBE4D8] pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-gray-100">
+        
+        <!-- Brand Info -->
+        <div class="sm:col-span-2 space-y-3">
+          <div class="flex items-center gap-2.5">
+            <div class="w-10 h-10 rounded-full border border-gold-500 flex items-center justify-center p-1 bg-white">
+              <img src="img/logo.png" alt="Logo" class="w-full h-full object-contain rounded-full">
+            </div>
+            <div>
+              <span class="font-serif-title font-bold text-base sm:text-lg text-brand-brown tracking-wider block">HARUM <span class="text-gold-500">SARI</span> DUPA</span>
+              <span class="text-[9px] text-gold-600 tracking-widest uppercase block -mt-0.5 font-semibold">Sarana Bhakti, Aroma Sejati</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-600 leading-relaxed max-w-sm">
+            Distributor & reseller aneka dupa sembahyang abu dingin, dupa upacara, dupa racik dan dupa India berkualitas di Bali.
+          </p>
+          
+          <div class="flex items-center gap-2 pt-2">
+            <a href="https://instagram.com/dupa_harumsari" target="_blank" title="Instagram @dupa_harumsari" class="w-8 h-8 rounded-full bg-brand-cream text-brand-brown hover:bg-gold-500 hover:text-white flex items-center justify-center transition-colors">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://tiktok.com/@harumsari_dupa" target="_blank" title="TikTok @harumsari_dupa" class="w-8 h-8 rounded-full bg-brand-cream text-brand-brown hover:bg-gold-500 hover:text-white flex items-center justify-center transition-colors">
+              <i data-lucide="video" class="w-4 h-4"></i>
+            </a>
+            <a href="https://facebook.com/dupa_harumsari" target="_blank" title="Facebook dupa_harumsari" class="w-8 h-8 rounded-full bg-brand-cream text-brand-brown hover:bg-gold-500 hover:text-white flex items-center justify-center transition-colors">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigasi -->
+        <div>
+          <h4 class="font-serif-title font-bold text-brand-brown text-sm mb-3">Navigasi</h4>
+          <ul class="space-y-2 text-xs text-gray-600">
+            <li><a href="index.html" class="hover:text-gold-500 transition-colors">Beranda</a></li>
+            <li><a href="tentang.html" class="hover:text-gold-500 transition-colors">Tentang Kami</a></li>
+            <li><a href="produk.html" class="hover:text-gold-500 transition-colors">Katalog 13 Produk</a></li>
+            <li><a href="kontak.html" class="hover:text-gold-500 transition-colors">Lokasi & Maps</a></li>
+          </ul>
+        </div>
+
+        <!-- Marketplace Link -->
+        <div>
+          <h4 class="font-serif-title font-bold text-brand-brown text-sm mb-3">Toko Online</h4>
+          <ul class="space-y-2 text-xs text-gray-600">
+            <li><a href="https://shopee.co.id" target="_blank" class="hover:text-orange-500 flex items-center gap-1.5"><i data-lucide="shopping-bag" class="w-3.5 h-3.5"></i> Shopee Store</a></li>
+            <li><a href="https://tokopedia.com" target="_blank" class="hover:text-green-600 flex items-center gap-1.5"><i data-lucide="shopping-cart" class="w-3.5 h-3.5"></i> Tokopedia</a></li>
+            <li><a href="https://wa.me/6287726732826" target="_blank" class="hover:text-gold-500 flex items-center gap-1.5"><i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Direct WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <!-- Alamat Sesuai Request -->
+        <div>
+          <h4 class="font-serif-title font-bold text-brand-brown text-sm mb-3">Alamat & Kontak</h4>
+          <ul class="space-y-2 text-xs text-gray-600">
+            <li class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-gold-500 shrink-0 mt-0.5"></i>
+              <span>Jalan Pendawa No. 22 Sading, Mengwi, Badung, Bali</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-gold-500 shrink-0"></i>
+              <span>0877-2673-2826</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 text-center text-[11px] text-gray-500">
+        <p>&copy; 2026 HARUM SARI DUPA. Portfolio Project. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WA -->
+  <a href="https://wa.me/6287726732826" target="_blank" class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 bg-[#25D366] text-white p-3.5 rounded-full shadow-2xl floating-wa">
+    <i data-lucide="message-circle" class="w-6 h-6"></i>
+  </a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
